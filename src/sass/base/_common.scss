@@ -1,0 +1,20 @@
+body {
+  color: $grey-text-color;
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
