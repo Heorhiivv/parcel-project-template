@@ -1,14 +1,21 @@
 body {
   color: $grey-text-color;
   font-family: "DM Sans", sans-serif;
+  font-size: 12px;
   margin: 0;
+  @include for-size(tablet) {
+    font-size: 14px;
+  }
+  @include for-size(desktop) {
+    font-size: 16px;
+  }
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-*,
+*, 
 *::before,
 *::after {
   margin: 0;
@@ -17,4 +24,15 @@ img {
 
 ul {
   list-style: none;
+}
+button {
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: $grey-text-color;
 }

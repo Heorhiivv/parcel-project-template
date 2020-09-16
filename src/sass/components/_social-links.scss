@@ -1,0 +1,14 @@
+.social-link {
+  width: 32px;
+  height: 32px;
+  background-color: $social-link-color;
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  @include for-size(tablet) {
+    width: 34px;
+    height: 34px;
+  }
+}

@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include for-size(tablet) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @include for-size(desktop) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}

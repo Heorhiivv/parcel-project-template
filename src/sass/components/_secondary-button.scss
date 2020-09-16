@@ -1,0 +1,12 @@
+.secondary-btn {
+  text-align: center;
+  border-radius: 22px;
+  color: $cherry-text-color;
+  background-color: $white-color;
+  font-size: 16px;
+  outline: none;
+  &:hover,
+  &:focus {
+    background-color: $accent-grey-color;
+  }
+}
