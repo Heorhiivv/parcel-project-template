@@ -1,12 +1,25 @@
 .tradition {
   background-color: $primary-bg;
+
+  @include for-size(tablet) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .background {
-  //   background-image: url('../images/optimise-images/mobile-milk-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/optimise-images/mobile-milk-bg.png');
+  }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -37,14 +50,17 @@
   padding-top: 26px;
 }
 
+.deskription-block {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
 .diskription-first {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.583;
   color: $black-text-color;
   padding-top: 46px;
-  padding-right: 30px;
-  padding-left: 30px;
 }
 
 .diskription-second {
@@ -53,8 +69,6 @@
   line-height: 1.583;
   color: $grey-text-color;
   padding-top: 36px;
-  padding-right: 30px;
-  padding-left: 30px;
 }
 
 .diskription-third {
@@ -63,13 +77,10 @@
   line-height: 1.583;
   color: $grey-text-color;
   padding-top: 20px;
-  padding-right: 30px;
-  padding-left: 30px;
 }
 
 .btn-container {
   padding-top: 20px;
-  padding-left: 30px;
 }
 
 .tradition-btn {
@@ -109,9 +120,136 @@
   line-height: 1.667;
   color: $black-text-color;
   padding-top: 25px;
-  padding-right: 50px;
 }
 
-.icon-diskription:last-child {
-  padding-bottom: 145px;
+.block-information {
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .container-information {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block-information:last-child {
+    padding-bottom: 145px;
+  }
+}
+
+@include for-size(tablet) {
+  .title-tradition {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .container-tablet {
+    display: flex;
+  }
+
+  .picture-block {
+    min-width: 340px;
+    min-height: 339px;
+  }
+  .picture-tradition {
+    padding-top: 50px;
+  }
+
+  .deskription-block {
+    margin-left: 17px;
+  }
+
+  .diskription-first {
+    padding-top: 100px;
+    min-width: 340px;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 1.786;
+  }
+
+  .diskription-second {
+    padding-top: 35px;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 1.786;
+  }
+
+  .diskription-third {
+    padding-top: 25px;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 1.786;
+  }
+
+  .btn-container {
+    padding-top: 62px;
+    margin-right: 0;
+  }
+  .container-information {
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon-tradition {
+    padding-top: 66px;
+  }
+  .icon-title {
+    padding-top: 36px;
+  }
+  .icon-diskription {
+    padding-top: 15px;
+    margin-right: 0;
+    padding-bottom: 246px;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+  }
+}
+
+@include for-size(desktop) {
+  .title-tradition {
+    width: 560px;
+  }
+  .picture-block {
+    min-width: 516px;
+    min-height: 516px;
+  }
+  .picture-tradition {
+    padding-top: 55px;
+  }
+
+  .deskription-block {
+    margin-left: 74px;
+  }
+
+  .diskription-first {
+    padding-top: 106px;
+    font-size: 16px;
+    line-height: 1.786;
+  }
+
+  .diskription-second {
+    padding-top: 35px;
+  }
+
+  .diskription-third {
+    padding-top: 45px;
+  }
+  .btn-container {
+    padding-top: 45px;
+  }
+  .block-information {
+    width: calc((100% - 2 * 100px) / 3);
+  }
+
+  .icon-tradition {
+    padding-top: 40px;
+  }
+  .icon-title {
+    padding-top: 40px;
+  }
+
+  .icon-diskription {
+    padding-bottom: 310px;
+  }
 }
