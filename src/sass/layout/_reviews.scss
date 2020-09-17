@@ -11,21 +11,34 @@
   color: $black-text-color;
   font-size: 14px;
  }
- .slide-review {
-   background-color: $phrase-bg-color;
-   padding: 43px 66px 26px 57px;
-   line-height: 255%;
-   margin-bottom: 72px;
-   &::before {
-    content: '';
-    width: 54px;
-    height: 40px;
-    background-color: transparent;
-    background-image: url(../images/svg/bracket.svg);
-    background-size: auto;
-   }
- }
  .slide-photo {
    margin: 0 auto;
    margin-bottom: 29px;
  }
+ .slide-review {    
+  line-height: 255%;       
+  padding-left: 5px; 
+  padding-right: 5px;   
+  padding-bottom: 25px;    
+  background-image: linear-gradient(#ccc 1px, transparent 1px);    
+  background-size: 80px 30px;    
+  background-position-y: 117px;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    display: block;
+    width: 54px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url(../images/svg/bracket.svg);
+   }
+  }
+  .slide-container {
+    position: relative;
+    background-color: $phrase-bg-color;
+    padding: 43px 66px 0 57px;
+    margin-bottom: 52px;
+  }
