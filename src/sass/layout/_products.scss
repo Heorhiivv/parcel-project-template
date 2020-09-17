@@ -42,6 +42,7 @@
 
 .product-name {
   font-family: 'Titan One';
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -50,7 +51,20 @@
   color: $white-color;
 }
 
-.points {
-  width: 6px;
-  height: 6px;
+.circles-svg {
+  fill: $white-color;
+  margin: 0 auto;
+}
+
+.product-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
