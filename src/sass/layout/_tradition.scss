@@ -1,0 +1,117 @@
+.tradition {
+  background-color: $primary-bg;
+}
+
+.background {
+  //   background-image: url('../images/optimise-images/mobile-milk-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (max-width: 767px) {
+    background-image: url('../images/optimise-images/mobile-milk-bg@2x.png');
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/optimise-images/desktop-milk-bg.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-width: 1200px) {
+    background-image: url('../images/optimise-images/desktop-milk-bg@2x.png');
+  }
+}
+
+.title-tradition {
+  padding-top: 125px;
+  text-align: center;
+}
+
+.picture-tradition {
+  width: 100%;
+  padding-top: 26px;
+}
+
+.diskription-first {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  color: $black-text-color;
+  padding-top: 46px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.diskription-second {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  color: $grey-text-color;
+  padding-top: 36px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.diskription-third {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  color: $grey-text-color;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.btn-container {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.tradition-btn {
+  background: #ffffff;
+  border-radius: 22px;
+  border-color: #ffffff;
+  width: 176px;
+  height: 44px;
+  padding: 10px;
+}
+
+.button-icon-tradition {
+  width: 10px;
+  height: 10px;
+  fill: $cherry-text-color;
+  margin-left: 14px;
+}
+
+.text-btn-tradition {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.285;
+  color: $cherry-text-color;
+}
+
+.icon-tradition {
+  padding-top: 38px;
+}
+
+.icon-title {
+  padding-top: 25px;
+}
+
+.icon-diskription {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.667;
+  color: $black-text-color;
+  padding-top: 25px;
+  padding-right: 50px;
+}
+
+.icon-diskription:last-child {
+  padding-bottom: 145px;
+}
