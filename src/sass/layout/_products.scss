@@ -11,20 +11,19 @@
 }
 
 .title.products {
-  margin-bottom: 31px;
   text-align: center;
 }
 
 .picture-img {
   margin-bottom: 22px;
-
-  // position: absolute;
-  bottom: 322px;
-  left: 18px;
+  bottom: 55%;
+  position: absolute;
+  transform: translateX(-10%);
 }
 
 .products-card-item {
-  // position: relative;
+  padding-top: 160px;
+  position: relative;
 
   &.icecream,
   &.icecoffee,
@@ -100,6 +99,8 @@
 }
 
 .products-card {
+  padding: 140px 0;
+
   @include for-size(desktop) {
     display: flex;
     align-items: center;
