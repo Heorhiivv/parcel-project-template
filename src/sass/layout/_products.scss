@@ -1,0 +1,56 @@
+.section-products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+}
+
+.subtitle.products {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.title.products {
+  margin-bottom: 31px;
+}
+
+.products-card-item {
+  margin-bottom: 18px;
+
+  &.icecream,
+  &.icecoffee,
+  &.milkshakes {
+    background-color: $rose-bg;
+    max-width: 280px;
+    height: 485px;
+    border-radius: 24px;
+    @include for-size(tablet) {
+      max-width: 220px;
+    }
+    @include for-size(desktop) {
+      max-width: 329px;
+      height: 525px;
+    }
+  }
+  &.icecoffee {
+    background-color: $bege-color;
+  }
+
+  &.milkshakes {
+    background-color: $green-color;
+  }
+}
+
+.product-name {
+  font-family: 'Titan One';
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.points {
+  width: 6px;
+  height: 6px;
+}
