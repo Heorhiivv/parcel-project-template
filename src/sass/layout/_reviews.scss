@@ -1,0 +1,31 @@
+.container-image {
+  margin: 0 auto;
+}
+.slide-review,
+.slide-client-name {
+ color: $black-text-color;
+ text-align: center;
+}
+.slide-client-name {
+  display: block;
+  color: $black-text-color;
+  font-size: 14px;
+ }
+ .slide-review {
+   background-color: $phrase-bg-color;
+   padding: 43px 66px 26px 57px;
+   line-height: 255%;
+   margin-bottom: 72px;
+   &::before {
+    content: '';
+    width: 54px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url(../images/svg/bracket.svg);
+    background-size: auto;
+   }
+ }
+ .slide-photo {
+   margin: 0 auto;
+   margin-bottom: 29px;
+ }
