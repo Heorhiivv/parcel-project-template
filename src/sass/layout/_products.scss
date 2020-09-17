@@ -1,6 +1,15 @@
 .section-products {
   padding-top: 121px;
   padding-bottom: 98px;
+  max-width: 480px;
+  margin: 0 auto;
+
+  @include for-size(tablet) {
+    min-width: 768px;
+  }
+  @include for-size(desktop) {
+    min-width: 1200px;
+  }
 }
 
 .subtitle.products {
@@ -8,9 +17,6 @@
   margin: 0 auto;
   margin-bottom: 15px;
   text-align: center;
-
-  @include for-size(tablet) {
-  }
 }
 
 .title.products {
@@ -23,23 +29,28 @@
   right: 10px;
   position: absolute;
   transform: translateY(-47%);
-  max-width: 768px;
 
   @include for-size(tablet) {
     right: 0;
     transform: translateY(-46%);
   }
+
+  @include for-size(desktop) {
+    right: -7px;
+    transform: translateY(-62%);
+  }
 }
 
 .products-card-item {
-  padding: 160px 0;
+  padding-top: 160px;
   position: relative;
+  max-width: 280px;
+  margin: 0 auto;
 
   &.icecream,
   &.icecoffee,
   &.milkshakes {
     background-color: $rose-bg;
-    max-width: 280px;
     height: 100%;
     border-radius: 24px;
     padding-right: 40px;
@@ -47,14 +58,14 @@
     padding-bottom: 40px;
 
     @include for-size(tablet) {
-      max-width: 220px;
-      // padding: 40px 11px;
       width: calc((100% - 20px * 2) / 3);
     }
 
     @include for-size(desktop) {
-      max-width: 329px;
-      padding: 50px 45px;
+      padding-bottom: 50px;
+      padding-right: 45px;
+      padding-left: 45px;
+      width: calc((100% - 30px * 2) / 3);
     }
   }
   &.icecoffee {
@@ -68,6 +79,7 @@
 
 .products-card-item:not(:last-child) {
   margin-bottom: 133px;
+
   @include for-size(tablet) {
     margin-bottom: 0;
   }
@@ -91,6 +103,11 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $white-color;
+
+  @include for-size(desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .circles-svg {
@@ -106,6 +123,14 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $white-color;
+
+  @include for-size(tablet) {
+    line-height: 1.76;
+  }
+
+  @include for-size(desktop) {
+    font-size: 16px;
+  }
 }
 
 .product-info {
@@ -121,6 +146,9 @@
   @include for-size(tablet) {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+  }
+  @include for-size(desktop) {
+    padding-top: 260px;
   }
 }
