@@ -1,0 +1,48 @@
+.footer {
+ & .primary-btn {
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 22px;
+  line-height: 1.313;
+       &::after {
+        content: '';
+        display: inline-block;
+        width: 7px;
+        height: 10px;
+        background-color: transparent;
+        background-image: url(../images/svg/problem-button.svg);
+        margin-left: 5px;
+      }
+ }
+ & .secondary-btn {
+  padding: 15px;
+  border-radius: 22px;
+  line-height: 1.313;
+  font-weight: 700;
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 10px;
+    background-color: transparent;
+    background-image: url(../images/svg/btn.svg);
+    margin-left: 5px;
+  }
+ }
+}
+.vector  {
+  fill: white;
+}
+
+.first-column::before {
+  content: "CAFE";
+  display: block;
+  min-width: 80px;
+  min-height: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+
+background: #F0D1A5;
+border-radius: 4px;
+}
