@@ -1,0 +1,115 @@
+<header>
+  <div class="container header">
+    <div class="contra">
+      <a href="./index.html" class="logo">
+        <picture class="picture">
+          <source
+            srcset="
+              ./images/optimise-images/desktop-logo.webp    1x,
+              ./images/optimise-images/desktop-logo@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/optimise-images/desktop-logo.png 1x,
+              ./images/optimise-images/desktop-logo.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/optimise-images/tablet-logo.webp    1x,
+              ./images/optimise-images/tablet-logo@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/optimise-images/tablet-logo.png    1x,
+              ./images/optimise-images/tablet-logo@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/optimise-images/mobile-logo.webp    1x,
+              ./images/optimise-images/mobile-logo@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/optimise-images/mobile-logo.png    1x,
+              ./images/optimise-images/mobile-logo@2x.png 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            src="./images/optimise-images/mobile-logo.png"
+            alt="retina picture"
+          /> </picture
+      ></a>
+      <div class="parent">
+        <div class="header-menu" data-menu>
+          <button type="button" class="secondary-btn header-btn">
+            Buy now
+          </button>
+          <nav>
+            <ul class="menu-nav-list">
+              <li class="header-nav-list-li current">Home</li>
+              <li class="header-nav-list-li">About us</li>
+              <li class="header-nav-list-li">How it’s made?</li>
+              <li class="header-nav-list-li">Our products</li>
+              <li class="header-nav-list-li">Contact</li>
+            </ul>
+          </nav>
+        </div>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="header-menu"
+          data-menu-button
+        >
+          <svg width="24" height="16">
+            <use
+              href="./images/svg/sprite.svg#icon-burger"
+              class="burger"
+            ></use>
+            <use
+              href="./images/svg/sprite.svg#icon-close"
+              class="toclose"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-list-li current">Home</li>
+        <li class="header-nav-list-li">About us</li>
+        <li class="header-nav-list-li">How it’s made?</li>
+        <li class="header-nav-list-li">Our products</li>
+        <li class="header-nav-list-li">Contact</li>
+      </ul>
+    </nav>
+
+    <button type="button" class="secondary-btn header-btn non">Buy now</button>
+  </div>
+</header>
+<!-- <div class="header-menu" data-menu>
+  <nav>
+    <ul class="menu-nav-list">
+      <li class="header-nav-list-li">Home</li>
+      <li class="header-nav-list-li">About us</li>
+      <li class="header-nav-list-li">How it’s made?</li>
+      <li class="header-nav-list-li">Our products</li>
+      <li class="header-nav-list-li">Contact</li>
+    </ul>
+  </nav>
+</div> -->
+<script src="./js/menu.js"></script>
