@@ -1,17 +1,56 @@
 .section-hero {
   background-color: $rose-bg;
-  padding-top: 137px;
+}
+.container.hero {
+  position: relative;
+  height: 502px;
+  padding-top: 193px;
   padding-bottom: 160px;
   background-image: url('../images/optimise-images/mobile-hero-ice.png'),
     url('../images/optimise-images/mobile-circle.png');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 171px 410px, contain;
+  background-position: 117px 92px, 36px 83px;
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
     screen and (min-resolution: 96dpi) and (min-width: 320px),
     screen and (min-resolution: 1dppx) and (min-width: 320px) {
     background-image: url('../images/optimise-images/mobile-hero-ice@2x.png'),
-      url(../images/optimise-images/mobile-circle@2x.png);
+      url('../images/optimise-images/mobile-circle@2x.png');
+  }
+
+  @include for-size(tablet) {
+    height: 399px;
+    padding-top: 102px;
+    padding-bottom: 160px;
+    background-image: url('../images/optimise-images/tablet-hero-ice.png'),
+      url('../images/optimise-images/tablet-hero-girl.png'),
+      url('../images/optimise-images/tablet-hero-milk.png'),
+      url('../images/optimise-images/tablet-circle.png');
+    // background-position: 117px 9px, 36px 0px;
+    background-size: 143px 336px, 168px 133px, 124px 126px, 324px 322px;
+    background-position: right 210px bottom, right bottom, left 34px bottom 28px,
+      right 103px bottom 31px;
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 96dpi) and (min-width: 768px),
+      screen and (min-resolution: 1dppx) and (min-width: 768px) {
+      background-image: url('../images/optimise-images/tablet-hero-ice@2x.png'),
+        url('../images/optimise-images/tablet-hero-girl@2x.png'),
+        url('../images/optimise-images/tablet-hero-milk@2x.png'),
+        url('../images/optimise-images/tablet-circle@2x.png');
+    }
+  }
+  @include for-size(desktop) {
+    height: 665px;
+    padding-top: 171px;
+    padding-bottom: 292px;
+    background-image: url('../images/optimise-images/desktop-hero-ice.png'),
+      url('../images/optimise-images/desktop-hero-girl.png'),
+      url('../images/optimise-images/desktop-hero-milk.png'),
+      url('../images/optimise-images/desktop-hero-circle.png');
+    background-size: 235px 557px, 293px 232px, 188px 191px, 538px 538px;
+    background-position: left 594px bottom, right bottom, left 30px bottom 45px,
+      left 475px bottom 75px;
   }
 }
 .title.hero {
@@ -21,6 +60,11 @@
   letter-spacing: 0.04em;
   max-width: 230px;
   text-transform: uppercase;
+  @include for-size(tablet) {
+    font-size: 34px;
+    line-height: 1.15;
+    max-width: 162px;
+  }
 }
 .subtitle.hero {
   display: block;
@@ -28,20 +72,80 @@
   line-height: 1.154;
   letter-spacing: 0.04em;
   color: $white-color;
+  @include for-size(tablet) {
+    font-size: 22px;
+    line-height: 1.136;
+  }
 }
 
 .hero-text {
   display: none;
-
   .round-btn {
     display: none;
   }
+  @include for-size(tablet) {
+    display: block;
+    margin-left: 120px;
+    margin-top: 66px;
+    &-item {
+      font-size: 8px;
+      line-height: 1.5;
+      color: $white-color;
+      width: 114px;
+    }
+    .round-btn {
+      display: block;
+      height: 18px;
+      width: 18px;
+      margin-top: 7px;
+    }
+  }
 }
 
+.round-btn-item-svg {
+  display: block;
+  width: 6px;
+  height: 5px;
+  margin: 0 auto;
+  fill: $accent-color;
+}
 .hero-list {
   display: none;
+  @include for-size(tablet) {
+    display: block;
+    position: absolute;
+    top: 96px;
+    right: 0;
+    .title {
+      font-size: 28px;
+      line-height: 1.143;
+    }
+  }
 }
 
+.hero-list-item {
+  position: relative;
+}
+.hero-list-item::before {
+  content: '';
+  // z-index: 1;
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $white-color;
+}
+.item-circle {
+  position: relative;
+  z-index: 2;
+}
+.hero-number-title {
+  font-size: 8px;
+  line-height: 1.25;
+  color: $white-color;
+}
 .hero-button .primary-btn,
 .hero-button .secondary-btn {
   min-width: 62px;
