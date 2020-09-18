@@ -1,7 +1,10 @@
 .section-hero {
   background-color: $rose-bg;
+  padding-top: 137px;
+  padding-bottom: 160px;
 }
 .title.hero {
+  margin-bottom: 19px;
   font-size: 48px;
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -15,6 +18,15 @@
   letter-spacing: 0.04em;
   color: $white-color;
 }
-.hero-text .round-btn {
+
+.hero-text {
+  display: none;
+
+  .round-btn {
+    display: none;
+  }
+}
+
+.hero-list {
   display: none;
 }
