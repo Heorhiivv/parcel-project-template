@@ -5,7 +5,8 @@
   background-image: url('../images/optimise-images/mobile-hero-ice.png'),
     url('../images/optimise-images/mobile-circle.png');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
+  background-position: 117px 9px, 36px 0px;
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
     screen and (min-resolution: 96dpi) and (min-width: 320px),
