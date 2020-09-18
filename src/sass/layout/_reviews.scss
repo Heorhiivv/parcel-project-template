@@ -55,6 +55,25 @@
       left: 70px;
     }
    }
+   &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 32px;
+    height: 4px;
+    top: 330px;
+    left: 120px;
+    display: block;
+    // width: 54px;
+    // height: 40px;
+    // background-color: ;
+    background-image: url(../images/svg/circles-red.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: $accent-color;
+    // @include for-size(tablet) {
+    //   left: 70px;
+    }
   }
   .slide-container {
     width: 280px;
@@ -64,7 +83,7 @@
     z-index: 0;
     background-color: $phrase-bg-color;
     padding: 43px 66px 0 57px;
-    margin-bottom: 52px;
+    margin-bottom: 70px;
     @include for-size(tablet) {
       width: 620px;
       min-height: 164px;
