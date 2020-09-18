@@ -1,0 +1,154 @@
+.section-products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  max-width: 480px;
+  margin: 0 auto;
+
+  @include for-size(tablet) {
+    min-width: 768px;
+  }
+  @include for-size(desktop) {
+    min-width: 1200px;
+  }
+}
+
+.subtitle.products {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.title.products {
+  text-align: center;
+}
+
+.picture-img {
+  margin-bottom: 22px;
+  top: 0%;
+  right: 10px;
+  position: absolute;
+  transform: translateY(-47%);
+
+  @include for-size(tablet) {
+    right: 0;
+    transform: translateY(-46%);
+  }
+
+  @include for-size(desktop) {
+    right: -7px;
+    transform: translateY(-62%);
+  }
+}
+
+.products-card-item {
+  padding-top: 160px;
+  position: relative;
+  max-width: 280px;
+  margin: 0 auto;
+
+  &.icecream,
+  &.icecoffee,
+  &.milkshakes {
+    background-color: $rose-bg;
+    height: 100%;
+    border-radius: 24px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+
+    @include for-size(tablet) {
+      width: calc((100% - 20px * 2) / 3);
+    }
+
+    @include for-size(desktop) {
+      padding-bottom: 50px;
+      padding-right: 45px;
+      padding-left: 45px;
+      width: calc((100% - 30px * 2) / 3);
+    }
+  }
+  &.icecoffee {
+    background-color: $bege-color;
+  }
+
+  &.milkshakes {
+    background-color: $green-color;
+  }
+}
+
+.products-card-item:not(:last-child) {
+  margin-bottom: 133px;
+
+  @include for-size(tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.round-btn-item-svg {
+  fill: $accent-color;
+  &:hover,
+  &:focus {
+    fill: $cherry-text-color;
+  }
+}
+
+.product-name {
+  margin-bottom: 30px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white-color;
+
+  @include for-size(desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.circles-svg {
+  fill: $white-color;
+  margin-bottom: 30px;
+}
+
+.product-text {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $white-color;
+
+  @include for-size(tablet) {
+    line-height: 1.76;
+  }
+
+  @include for-size(desktop) {
+    font-size: 16px;
+  }
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-card {
+  padding-top: 140px;
+
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @include for-size(desktop) {
+    padding-top: 260px;
+  }
+}
