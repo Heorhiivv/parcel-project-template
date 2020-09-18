@@ -1,6 +1,10 @@
 .container-image {
   margin: 0 auto;
 }
+.slider,
+.slide {
+  width: 100%;
+}
 .slide-review,
 .slide-client-name {
  color: $black-text-color;
@@ -72,7 +76,4 @@
       padding: 47px 88px 0 88px;
     }
   }
-  .slider,
-  .slide {
-    width: 100%;
-  }
+  
