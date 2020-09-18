@@ -1,15 +1,5 @@
 .tradition {
   background-color: $primary-bg;
-
-  @include for-size(tablet) {
-    width: 768px;
-    margin: 0 auto;
-  }
-
-  @include for-size(desktop) {
-    width: 1200px;
-    margin: 0 auto;
-  }
 }
 
 .background {
@@ -124,12 +114,6 @@
 
 .block-information {
   margin-right: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .container-information {
-    display: flex;
-  }
 }
 
 @media screen and (max-width: 767px) {
