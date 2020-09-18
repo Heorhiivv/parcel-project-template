@@ -1,23 +1,20 @@
 .section-hero {
   background-color: $rose-bg;
-
-  // .round-btn {
-  //   width: 18px;
-  //   height: 18px;
-  // }
 }
 .title.hero {
-  display: flex;
-  flex-direction: column;
-
   font-size: 48px;
-  line-height: 46px;
-  width: 230px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  max-width: 230px;
   text-transform: uppercase;
 }
 .subtitle.hero {
+  display: block;
   font-size: 26px;
   line-height: 1.154;
   letter-spacing: 0.04em;
   color: $white-color;
+}
+.hero-text .round-btn {
+  display: none;
 }
