@@ -2,6 +2,17 @@
   background-color: $rose-bg;
   padding-top: 137px;
   padding-bottom: 160px;
+  background-image: url('../images/optimise-images/mobile-hero-ice.png'),
+    url('../images/optimise-images/mobile-circle.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 96dpi) and (min-width: 320px),
+    screen and (min-resolution: 1dppx) and (min-width: 320px) {
+    background-image: url('../images/optimise-images/mobile-hero-ice@2x.png'),
+      url(../images/optimise-images/mobile-circle@2x.png);
+  }
 }
 .title.hero {
   margin-bottom: 19px;
@@ -29,4 +40,19 @@
 
 .hero-list {
   display: none;
+}
+
+.hero-button .primary-btn,
+.hero-button .secondary-btn {
+  min-width: 62px;
+  padding: 11px 13px;
+  border: none;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.hero-button .secondary-btn {
+  margin-left: 8px;
+  min-width: 83px;
 }
