@@ -1,0 +1,415 @@
+@include for-size(desktop) {
+  .footer {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/optimise-images/footer1x.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .footer {
+    background-image: url(../images/optimise-images/footer@2x.png);
+  }
+}
+.footer {
+  position: relative;
+  background-color: $primary-bg;
+}
+.ice-cream-point {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+
+  width: 220px;
+  padding: 43px 20px;
+  background-color: $white-color;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+    @include for-size (tablet) {
+      font-size: 14px;
+      padding: 50px 32px;
+      width: calc((100% - 40px) / 3);
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+  }
+    @include for-size(desktop) {
+      font-size: 16px;
+      padding: 51px 44px 62px;
+      width: calc((100% - 60px) / 3);
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+  }
+    & h3 {
+      color: $black-text-color;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ice-cream-point:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.ice-cream-network {
+  // position: absolute;
+  // top: -84px;
+  margin-bottom: 48px;
+
+  @include for-size (tablet) {
+    display: flex;
+    margin-bottom: 81px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 86px;
+  }
+}
+.cafe {
+  margin-bottom: 10px;
+  @include for-size(tablet) {
+  margin-bottom: 14px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 10px;
+  }
+    &::before {
+    content: "Cafe";
+    display: block;
+    
+    width: max-content;
+    min-height: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 25px;
+
+    color: $white-color;
+    background: $bege-color;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      min-height: 28px;
+      margin-bottom: 30px;
+   }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 32px;
+  }
+ }
+}
+.foodtruck {
+  margin-bottom: 10px;
+  @include for-size(tablet) {
+  margin-bottom: 14px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 10px;
+  }
+    &::before {
+    content: "foodtruck";
+    display: block;
+    
+    width: max-content;
+    min-height: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 25px;
+
+    color: $white-color;
+    background: $green-color;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      min-height: 28px;
+      margin-bottom: 30px;
+   }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 32px;
+  }
+ }
+}
+.info-subject {
+  display: block;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  letter-spacing: normal;
+
+    @include for-size(tablet) { 
+      line-height: 1.643;
+      margin-bottom: 30px;
+  }
+    @include for-size(desktop) { 
+      line-height: 1.813;
+      margin-bottom: 32px;
+  }
+}
+.scedule-list {
+
+  &::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #E1E1E1;
+  
+  margin-bottom: 25px;
+
+  @include for-size(tablet) { 
+   margin-bottom: 30px;
+ }
+  @include for-size(desktop) { 
+    margin-bottom: 32px;
+  }
+ } 
+}
+.work-hours {
+  color: $rose-text-color;
+}
+.scedule-item {
+  margin-bottom: 10px;
+
+  @include for-size(tablet) { 
+    margin-bottom: 16px;
+  }
+  @include for-size(desktop) { 
+    margin-bottom: 15px;
+  }
+    &:last-child {
+      margin-bottom: 25px;
+
+      @include for-size(tablet) { 
+       margin-bottom: 30px;
+    }
+      @include for-size(desktop) { 
+       margin-bottom: 32px;
+    }
+  }
+}
+.contacts {
+
+  &::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #E1E1E1;
+  
+  margin-bottom: 25px;
+
+  @include for-size(tablet) { 
+   margin-bottom: 30px;
+ }
+  @include for-size(desktop) { 
+    margin-bottom: 32px;
+  }
+ } 
+}
+.contacts-subject {
+  font-style: normal;
+  line-height: 1.5;
+
+    @include for-size(tablet) { 
+      line-height: 1.643;
+  }
+    @include for-size(desktop) { 
+      line-height: 1.813;
+  }
+}
+.footer-button {
+  text-align: center;
+  margin-bottom: 119px;
+
+    @include for-size (tablet) {
+      margin-bottom: 158px;
+    }
+    @include for-size (tablet) {
+      margin-bottom: 165px;
+    }
+
+  & .primary-btn {
+    font-weight: 700;
+    border-radius: 22px;
+    line-height: 1.313;
+  
+    padding: 10px 15px;
+    width: 164px;
+    min-height: 44px;
+    fill: $white-color;
+    margin-bottom: 10px;
+  
+    & .vector {
+      margin-left: 13px;
+    }
+    @include for-size (tablet) {
+      width: 192px;
+      margin-bottom: 0;
+    }
+    @include for-size (desktop) {
+      width: 198px;
+    }
+   }
+
+   & .secondary-btn {
+    font-weight: 700;
+    border-radius: 22px;
+    line-height: 1.313;
+  
+    padding: 10px 15px;
+    width: 161px;
+    min-height: 44px;
+    fill: $cherry-text-color;
+    
+    & .vector {
+      margin-left: 13px;
+    }
+    @include for-size (tablet) {
+      width: 174px;
+      margin-left: 15px;
+    }
+    @include for-size (desktop) {
+      width: 180px;
+    }
+   }
+  }
+
+.footer-subtitle {
+  display: block;
+  width: 234px;
+  margin-bottom: 17px;
+
+  @include for-size (tablet) {
+    width: 340px;
+    margin-bottom: 16px;
+  }
+  @include for-size (desktop) {
+    width: 474px;
+    margin-bottom: 15px;
+  }
+}
+.footer-title {
+  display: block;
+  width: 200px;
+  margin-bottom: 43px;
+
+  @include for-size (tablet) {
+    margin-bottom: 0;
+  }
+  @include for-size (desktop) {
+    width: 477px;
+  }
+}
+.social-link-list {
+  display: flex;
+  justify-content: right;
+  
+  margin-bottom: 46px;
+  
+  @include for-size (desktop) {
+    margin-left: 50px;
+  }
+}
+.social-link-item {
+
+  &:not(:first-child) {
+    margin-left: 28px;
+
+    @include for-size (tablet) {
+      margin-left: 30px;
+    }
+    @include for-size (desktop) {
+      margin-left: 24px;
+    }
+  }
+
+  & .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $white-color; 
+ }
+}
+
+.commercial-contact {
+  display: flex;
+  justify-content: right;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.833;
+  color: $black-text-color;
+  
+    @include for-size (tablet) {
+      font-size: 14px;
+      line-height: 1.85;
+    }
+    @include for-size (desktop) {
+      font-size: 16px;
+      line-height: 1.875;
+    }
+
+  & .commercial-tel {
+   color: $cherry-text-color;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 43px;
+  }
+}
+
+.all-about-us {
+  @include for-size (tablet) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 91px;
+    
+      & .feedback {
+        flex-direction: column;
+    }
+  }
+    @include for-size (desktop) {
+    margin-bottom: 97px;
+ }
+}
+.copyright {
+  display: block;
+  margin: 0 auto;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+
+  padding-top: 22px;
+  padding-bottom: 25px;
+
+  width: 150px;
+
+  @include for-size (tablet) {
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+
+    padding-top: 29px;
+    padding-bottom: 18px;
+    min-width: 276px;
+  }
+  
+  @include for-size (desktop) {
+    padding-top: 9px;
+    padding-bottom: 10px;
+    }
+  }
+.footer-copyright::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #E1E1E1;
+}
