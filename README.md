@@ -90,4 +90,8 @@ npm run deploy
 - Изображения добавляйте в папку `src/images`, заранее оптимизировав их. Сборщик
   просто копирует используемые изображения чтобы не нагружать вашу систему
   оптимизацией десятков картинок, так как на слабых компьютерах это повесит
-  систему.
+  систему. height: 502px; padding-top: 193px; padding-bottom: 160px;
+  background-image: url(/mobile-hero-ice.621771f3.png),
+  url(/mobile-circle.f86563d4.png); background-repeat: no-repeat;
+  background-size: 171px 410px, contain; background-position: 117px 92px, 36px
+  83px;
