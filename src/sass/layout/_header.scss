@@ -43,6 +43,14 @@ text-decoration: inherit;
 .header-nav-list-li:not(:last-child) {
   margin-right: 35px;
 }
+.header-nav-list-li:hover {
+  color: $accent-color;
+  transition: all 250ms linear;
+}
+.header-nav-list-li:focus {
+  color: $accent-color;
+  transition: all 250ms linear;
+}
 .logo {
   margin-right: auto;
   @include for-size(desktop) {
@@ -85,7 +93,7 @@ text-decoration: inherit;
   border: none;
   outline: $cherry-text-color;
   background-color: transparent;
-  position: absolute;
+  position: relative;
   top: 23px;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     top: 19px;
@@ -112,12 +120,16 @@ text-decoration: inherit;
 }
 // -----------------------Меню
 .header-menu {
-  display: none;
+  visibility: visible;
   opacity: 0;
-  visibility: unset;
   position: absolute;
   background-color: $white-color;
-  
+  transform: scale(0);
+  right: 1000px;
+  transition: .5s;
+  @include for-size(desktop) {
+    display: none;
+  }
   .header-btn {
     display: flex;
     align-items: center;
@@ -138,28 +150,27 @@ text-decoration: inherit;
 }
 
 .header-menu.is-open {
-  display: block;
-  z-index: 1;
-  text-align: center;
-  padding-top: 40px;
-  top: 0;
-  right: -25px;
-
-  visibility: visible;
+  // display: block;
+  // z-index: 1;
+  // text-align: center;
+  // padding-top: 40px;
+  // top: 0;
+  right: 6px;
   opacity: 1;
   // transform: translateY(100%);
   transform: scale(1);
-  transition: all 3s steps(3, end);
+  
+  // transition: all 3s steps(3, end);
  
-
   @include for-size(tablet) {
-    right: -220px;
-    top: 0px;
+    // right: -220px;
+    top: 2px;
+    right: 35px;
   }
-
-  width: 254px;
-  height: 1020px;
-  background-color: #e17992;
+    padding: 50px;
+    // width: 254px;
+    // height: 1020px;
+    background-color: #e17992;
 
   @include for-size(desktop) {
     display: none;
@@ -204,9 +215,9 @@ text-decoration: inherit;
   }
 }
 
-.parent {
-  position: relative;
-}
+// .parent {
+//   position: relative;
+// }
 
 .current {
   color: $cherry-text-color;

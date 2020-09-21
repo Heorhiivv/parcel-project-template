@@ -30,9 +30,17 @@ button {
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    transition: all 250ms linear;
+  }
 }
 
 .link {
   text-decoration: none;
   color: $grey-text-color;
+  &:hover,
+  &:focus {
+    transition: all 250ms linear;
+  }
 }
