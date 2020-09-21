@@ -8,19 +8,14 @@ header {
   padding-top: 6px;
   z-index: 1;
   margin: 0 auto;
-  // padding-bottom: 15px;
-  // position: relative;
-  // @media screen and (min-width: 320px) and (max-width: 767px) {
-  //   padding-left: 0px;
-  // }
-
   @include for-size(tablet) {
     padding-top: 37px;
   }
-
-  // @include for-size(desktop) {
-  //   // padding-left: 46px;
-  // }
+}
+.header a {
+font: inherit;
+color: inherit;
+text-decoration: inherit;
 }
 .header-nav {
   display: flex;
@@ -118,11 +113,11 @@ header {
 // -----------------------Меню
 .header-menu {
   display: none;
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: unset;
   position: absolute;
-  background-color: white;
-
+  background-color: $white-color;
+  
   .header-btn {
     display: flex;
     align-items: center;
@@ -149,6 +144,13 @@ header {
   padding-top: 40px;
   top: 0;
   right: -25px;
+
+  visibility: visible;
+  opacity: 1;
+  // transform: translateY(100%);
+  transform: scale(1);
+  transition: all 3s steps(3, end);
+ 
 
   @include for-size(tablet) {
     right: -220px;
