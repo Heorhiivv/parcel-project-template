@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: center;
 }
-.header {
+.header .container {
   display: flex;
   position: absolute;
   padding-top: 6px;
@@ -47,7 +47,7 @@ text-decoration: inherit;
   color: $accent-color;
   transition: all 250ms linear;
 }
-.header-nav-list-li:focus {
+.header-nav-list-li a:focus {
   color: $accent-color;
   transition: all 250ms linear;
 }
