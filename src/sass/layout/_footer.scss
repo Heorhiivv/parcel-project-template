@@ -58,16 +58,19 @@
   }
 }
 .ice-cream-network {
-  // position: absolute;
-  // top: -84px;
+  transform: translateY(-7%);
   margin-bottom: 48px;
 
   @include for-size (tablet) {
+    transform: translateY(-13%);
     display: flex;
     margin-bottom: 81px;
+
   }
   @include for-size(desktop) {
+    transform: translateY(-17%);
     margin-bottom: 86px;
+
   }
 }
 .cafe {
@@ -244,6 +247,8 @@
     min-height: 44px;
     fill: $white-color;
     margin-bottom: 10px;
+
+    border: none;
   
     & .vector {
       margin-left: 13px;
@@ -261,12 +266,13 @@
     font-weight: 700;
     border-radius: 22px;
     line-height: 1.313;
-  
+    
     padding: 10px 15px;
     width: 161px;
     min-height: 44px;
     fill: $cherry-text-color;
     
+    border: none;
     & .vector {
       margin-left: 13px;
     }
@@ -308,7 +314,7 @@
 }
 .social-link-list {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   
   margin-bottom: 46px;
   
@@ -339,7 +345,7 @@
 
 .commercial-contact {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
 
   font-weight: 700;
   font-size: 12px;

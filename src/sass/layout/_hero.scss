@@ -51,8 +51,7 @@
       url('../images/optimise-images/desktop-hero-milk.png'),
       url('../images/optimise-images/desktop-hero-circle.png');
     background-size: 235px 557px, 293px 232px, 188px 191px, 538px 538px;
-    background-position: left 594px bottom, right bottom, left 30px bottom 45px,
-      left 475px bottom 75px;
+    background-position: left 549px bottom, right 45px bottom, left 30px bottom 45px, left 430px bottom 75px;
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
       screen and (min-resolution: 96dpi) and (min-width: 768px),
       screen and (min-resolution: 1dppx) and (min-width: 768px) {
@@ -64,7 +63,7 @@
   }
 }
 .title.hero {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   font-size: 48px;
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -80,6 +79,7 @@
     line-height: 1.15;
     max-width: 277px;
     height: 137px;
+    margin-bottom: 25px;
   }
 }
 .subtitle.hero {
@@ -140,7 +140,7 @@
     }
   }
 }
-.round-btn-item-svg {
+.hero .round-btn-item-svg {
   display: block;
   width: 6px;
   height: 5px;
@@ -169,11 +169,13 @@
       @include for-size(desktop) {
         font-size: 46px;
         line-height: 1.152;
+        margin-right: 20px;
       }
     }
   }
   @include for-size(desktop) {
     top: 160px;
+    margin-right: 9px;
   }
 }
 
@@ -192,6 +194,7 @@
   @include for-size(desktop) {
     width: 30px;
     height: 30px;
+    right: 9px;
   }
 }
 .item-circle {
