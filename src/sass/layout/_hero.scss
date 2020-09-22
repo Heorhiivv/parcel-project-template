@@ -101,6 +101,7 @@
 
 .hero-text {
   display: none;
+  width: 114px;
   .round-btn {
     display: none;
   }
@@ -112,7 +113,6 @@
       font-size: 8px;
       line-height: 1.5;
       color: $white-color;
-      width: 114px;
     }
     .round-btn {
       display: block;
@@ -124,8 +124,8 @@
   }
   @include for-size(desktop) {
       margin-left: 180px;
-      margin-top: 112px;
-      
+      margin-top: 85px;
+      width: 200px;
       .round-btn {
       height: 26px;
       width: 26px;
@@ -135,8 +135,6 @@
     &-item {
       font-size: 14px;
       line-height: 1.5;
-      width: 200px;
-      
     }
   }
 }
