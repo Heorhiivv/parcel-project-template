@@ -1073,9 +1073,22 @@ header {
 }
 
 .tradition {
+  background-color: #FFF5F6;
+}
+.tradition .container {
   padding-top: 125px;
   padding-bottom: 145px;
-  background-color: #FFF5F6;
+}
+@media (min-width: 1200px) {
+  .tradition .container {
+    padding-bottom: 246px;
+  }
+}
+@media (min-width: 1200px) {
+  .tradition .container {
+    padding-top: 130px;
+    padding-bottom: 310px;
+  }
 }
 
 .background {
@@ -1105,18 +1118,18 @@ header {
 }
 
 .title-tradition {
+  margin-bottom: 26px;
   text-align: center;
 }
 
 .picture-tradition {
   width: 100%;
-  margin-top: 26px;
 }
 
 .deskription-block {
   margin-right: 30px;
   margin-left: 30px;
-  margin-top: 46px;
+  padding-top: 46px;
 }
 
 .diskription-first {
@@ -1175,10 +1188,6 @@ header {
   }
 }
 
-.icon-tradition {
-  margin-top: 38px;
-}
-
 .icon-title {
   margin-top: 25px;
 }
@@ -1195,28 +1204,25 @@ header {
   margin-right: 30px;
 }
 
-@media (min-width: 768px) {
-  .tradition {
-    padding-top: 130px;
-    padding-bottom: 246px;
-  }
+.container-tablet {
+  margin-bottom: 39px;
+}
 
+@media (min-width: 768px) {
   .title-tradition {
     margin: 0 auto;
+    margin-bottom: 50px;
   }
 
   .container-tablet {
     display: flex;
-  }
-
-  .picture-tradition {
-    margin-top: 50px;
+    margin-bottom: 66px;
   }
 
   .deskription-block {
     margin: 0;
-    padding-left: 17px;
-    margin-top: 100px;
+    margin-left: 17px;
+    padding-top: 45px;
     width: 50%;
   }
 
@@ -1250,10 +1256,6 @@ header {
     justify-content: space-between;
   }
 
-  .icon-tradition {
-    margin-top: 66px;
-  }
-
   .icon-title {
     margin-top: 36px;
   }
@@ -1267,23 +1269,18 @@ header {
   }
 }
 @media (min-width: 1200px) {
-  .tradition {
-    padding-top: 125px;
-    padding-bottom: 310px;
-  }
-
   .picture-block {
     min-width: 516px;
     min-height: 516px;
   }
 
-  .picture-tradition {
-    margin-top: 55px;
+  .title-tradition {
+    margin-bottom: 55px;
   }
 
   .deskription-block {
-    padding-left: 74px;
-    margin-top: 106px;
+    margin-left: 74px;
+    padding-top: 51px;
   }
 
   .diskription-first {
@@ -1307,8 +1304,8 @@ header {
     width: calc((100% - 2 * 100px) / 3);
   }
 
-  .icon-tradition {
-    margin-top: 40px;
+  .container-tablet {
+    margin-bottom: 39px;
   }
 
   .icon-title {
