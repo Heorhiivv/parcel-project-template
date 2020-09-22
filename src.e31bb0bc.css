@@ -746,6 +746,7 @@ header {
 
 .hero-text {
   display: none;
+  width: 114px;
 }
 .hero-text .round-btn {
   display: none;
@@ -760,7 +761,6 @@ header {
     font-size: 8px;
     line-height: 1.5;
     color: #ffffff;
-    width: 114px;
   }
   .hero-text .round-btn {
     display: block;
@@ -773,7 +773,8 @@ header {
 @media (min-width: 1200px) {
   .hero-text {
     margin-left: 180px;
-    margin-top: 112px;
+    margin-top: 85px;
+    width: 200px;
   }
   .hero-text .round-btn {
     height: 26px;
@@ -784,7 +785,6 @@ header {
   .hero-text-item {
     font-size: 14px;
     line-height: 1.5;
-    width: 200px;
   }
 }
 
@@ -1073,6 +1073,8 @@ header {
 }
 
 .tradition {
+  padding-top: 125px;
+  padding-bottom: 145px;
   background-color: #FFF5F6;
 }
 
@@ -1103,18 +1105,18 @@ header {
 }
 
 .title-tradition {
-  padding-top: 125px;
   text-align: center;
 }
 
 .picture-tradition {
   width: 100%;
-  padding-top: 26px;
+  margin-top: 26px;
 }
 
 .deskription-block {
   margin-right: 30px;
   margin-left: 30px;
+  margin-top: 46px;
 }
 
 .diskription-first {
@@ -1122,7 +1124,6 @@ header {
   font-size: 12px;
   line-height: 1.583;
   color: #000000;
-  padding-top: 46px;
 }
 
 .diskription-second {
@@ -1130,7 +1131,7 @@ header {
   font-size: 12px;
   line-height: 1.583;
   color: #907E82;
-  padding-top: 36px;
+  margin-top: 36px;
 }
 
 .diskription-third {
@@ -1138,11 +1139,11 @@ header {
   font-size: 12px;
   line-height: 1.583;
   color: #907E82;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .btn-container {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .tradition-btn {
@@ -1175,11 +1176,11 @@ header {
 }
 
 .icon-tradition {
-  padding-top: 38px;
+  margin-top: 38px;
 }
 
 .icon-title {
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 .icon-diskription {
@@ -1187,21 +1188,20 @@ header {
   font-size: 12px;
   line-height: 1.667;
   color: #000000;
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 .block-information {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .block-information:last-child {
-    padding-bottom: 145px;
-  }
-}
 @media (min-width: 768px) {
+  .tradition {
+    padding-top: 130px;
+    padding-bottom: 246px;
+  }
+
   .title-tradition {
-    width: 450px;
     margin: 0 auto;
   }
 
@@ -1209,43 +1209,39 @@ header {
     display: flex;
   }
 
-  .picture-block {
-    min-width: 340px;
-    min-height: 339px;
-  }
-
   .picture-tradition {
-    padding-top: 50px;
+    margin-top: 50px;
   }
 
   .deskription-block {
-    margin-left: 17px;
+    margin: 0;
+    padding-left: 17px;
+    margin-top: 100px;
+    width: 50%;
   }
 
   .diskription-first {
-    padding-top: 100px;
-    min-width: 340px;
     margin-right: 0;
     font-size: 14px;
     line-height: 1.786;
   }
 
   .diskription-second {
-    padding-top: 35px;
+    margin-top: 35px;
     margin-right: 0;
     font-size: 14px;
     line-height: 1.786;
   }
 
   .diskription-third {
-    padding-top: 25px;
+    margin-top: 25px;
     margin-right: 0;
     font-size: 14px;
     line-height: 1.786;
   }
 
   .btn-container {
-    padding-top: 62px;
+    margin-top: 62px;
     margin-right: 0;
   }
 
@@ -1255,25 +1251,25 @@ header {
   }
 
   .icon-tradition {
-    padding-top: 66px;
+    margin-top: 66px;
   }
 
   .icon-title {
-    padding-top: 36px;
+    margin-top: 36px;
   }
 
   .icon-diskription {
-    padding-top: 15px;
+    margin-top: 15px;
     margin-right: 0;
-    padding-bottom: 246px;
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.02em;
   }
 }
 @media (min-width: 1200px) {
-  .title-tradition {
-    width: 560px;
+  .tradition {
+    padding-top: 125px;
+    padding-bottom: 310px;
   }
 
   .picture-block {
@@ -1282,29 +1278,29 @@ header {
   }
 
   .picture-tradition {
-    padding-top: 55px;
+    margin-top: 55px;
   }
 
   .deskription-block {
-    margin-left: 74px;
+    padding-left: 74px;
+    margin-top: 106px;
   }
 
   .diskription-first {
-    padding-top: 106px;
     font-size: 16px;
     line-height: 1.786;
   }
 
   .diskription-second {
-    padding-top: 35px;
+    margin-top: 35px;
   }
 
   .diskription-third {
-    padding-top: 45px;
+    margin-top: 45px;
   }
 
   .btn-container {
-    padding-top: 45px;
+    margin-top: 45px;
   }
 
   .block-information {
@@ -1312,15 +1308,11 @@ header {
   }
 
   .icon-tradition {
-    padding-top: 40px;
+    margin-top: 40px;
   }
 
   .icon-title {
-    padding-top: 40px;
-  }
-
-  .icon-diskription {
-    padding-bottom: 310px;
+    margin-top: 40px;
   }
 }
 .container-image {
@@ -1629,6 +1621,23 @@ header {
   }
 }
 
+.info-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .info-title {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .info-title {
+    font-size: 16px;
+  }
+}
+
 .work-hours {
   color: #FFA5BA;
 }
@@ -1803,11 +1812,6 @@ header {
   justify-content: flex-end;
   margin-bottom: 46px;
 }
-@media (min-width: 1200px) {
-  .social-link-list {
-    margin-left: 50px;
-  }
-}
 
 .social-link-item:not(:first-child) {
   margin-left: 28px;
@@ -1830,8 +1834,7 @@ header {
 }
 
 .commercial-contact {
-  display: flex;
-  justify-content: flex-end;
+  text-align: right;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.833;
@@ -1863,9 +1866,6 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 91px;
-  }
-  .all-about-us .feedback {
-    flex-direction: column;
   }
 }
 @media (min-width: 1200px) {
