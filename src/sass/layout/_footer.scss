@@ -232,45 +232,52 @@
 
     @include for-size (tablet) {
       margin-bottom: 158px;
+      display: flex;
+    
     }
-    @include for-size (tablet) {
+    @include for-size (desktop) {
       margin-bottom: 165px;
     }
 
   & .primary-btn {
+    display: block;
     font-weight: 700;
     border-radius: 22px;
     line-height: 1.313;
   
-    padding: 10px 15px;
-    width: 164px;
+    padding: 10px 14px;
+    max-width: 164px;
     min-height: 44px;
     fill: $white-color;
+    margin: 0 auto;
     margin-bottom: 10px;
 
     border: none;
   
     & .vector {
-      margin-left: 13px;
+      margin-left: 5px;
     }
     @include for-size (tablet) {
       width: 192px;
       margin-bottom: 0;
+      margin-right: 0;
     }
     @include for-size (desktop) {
-      width: 198px;
+      max-width: 198px;
     }
    }
 
    & .secondary-btn {
+    display: block;
     font-weight: 700;
     border-radius: 22px;
     line-height: 1.313;
     
     padding: 10px 15px;
-    width: 161px;
+    max-width: 161px;
     min-height: 44px;
     fill: $cherry-text-color;
+    margin: 0 auto;
     
     border: none;
     & .vector {

@@ -202,7 +202,6 @@ text-decoration: inherit;
     width: 302px;
   }
 }
-
 .menu-nav-list {
   display: flex;
   flex-direction: column;
@@ -214,14 +213,6 @@ text-decoration: inherit;
     margin-bottom: 23px;
   }
 }
-
-// .parent {
-//   position: relative;
-// }
-
 .current {
   color: $cherry-text-color;
 }
-// .header img {
-//   max-width: unset;
-// }

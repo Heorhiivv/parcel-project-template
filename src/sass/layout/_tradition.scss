@@ -74,11 +74,12 @@
 }
 
 .tradition-btn {
+  display: block;
   background: $white-color;
   border-radius: 22px;
   width: 176px;
   height: 44px;
-  padding: 10px;
+  padding: 12px 10px;
   border: none;
 }
 
@@ -94,6 +95,9 @@
   font-size: 14px;
   line-height: 1.285;
   color: $cherry-text-color;
+  @include for-size(tablet) {
+    font-size: 16px;
+  }
 }
 
 .icon-tradition {

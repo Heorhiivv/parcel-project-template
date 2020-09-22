@@ -35,6 +35,19 @@ button {
     transition: all 250ms linear;
   }
 }
+.button {
+  // display: block;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    transition: all 250ms linear;
+  }
+}
+
 
 .link {
   text-decoration: none;
