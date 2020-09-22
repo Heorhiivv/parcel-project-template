@@ -173,6 +173,20 @@
   }
  } 
 }
+.info-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  
+  color: $black-text-color;
+
+  @include for-size(tablet) { 
+   font-size: 14px;
+  }
+  @include for-size(desktop) { 
+    font-size: 16px;
+  }
+}
 .work-hours {
   color: $rose-text-color;
 }
@@ -324,11 +338,8 @@
   justify-content: flex-end;
   
   margin-bottom: 46px;
-  
-  @include for-size (desktop) {
-    margin-left: 50px;
-  }
 }
+
 .social-link-item {
 
   &:not(:first-child) {
@@ -351,8 +362,9 @@
 }
 
 .commercial-contact {
-  display: flex;
-  justify-content: flex-end;
+  // display: flex;
+  // justify-content: flex-end;
+  text-align: right;
 
   font-weight: 700;
   font-size: 12px;
@@ -382,10 +394,6 @@
     justify-content: space-between;
 
     margin-bottom: 91px;
-    
-      & .feedback {
-        flex-direction: column;
-    }
   }
     @include for-size (desktop) {
     margin-bottom: 97px;
