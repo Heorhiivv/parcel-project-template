@@ -1,7 +1,7 @@
-.section-hero {
+.hero {
   background-color: $rose-bg;
 }
-.container.hero {
+.hero .container {
   position: relative;
   height: 502px;
   padding-top: 193px;
@@ -62,7 +62,7 @@
     }
   }
 }
-.title.hero {
+.hero .title{
   margin-bottom: 20px;
   font-size: 48px;
   line-height: 1.15;
@@ -78,16 +78,17 @@
     font-size: 58px;
     line-height: 1.15;
     max-width: 277px;
-    height: 137px;
+    
     margin-bottom: 40px;
   }
 }
-.subtitle.hero {
+.hero .subtitle {
   display: block;
   font-size: 26px;
   line-height: 1.154;
   letter-spacing: 0.04em;
   color: $white-color;
+  background-color: transparent;
   @include for-size(tablet) {
     font-size: 22px;
     line-height: 1.136;
@@ -135,7 +136,7 @@
       font-size: 14px;
       line-height: 1.5;
       width: 200px;
-      height: 78px;
+      
     }
   }
 }
@@ -164,7 +165,7 @@
     .title {
       font-size: 28px;
       line-height: 1.143;
-
+      margin-bottom: 0;
       @include for-size(desktop) {
         font-size: 46px;
         line-height: 1.152;
@@ -180,6 +181,9 @@
 
 .hero-list-item {
   position: relative;
+  &:first-child {
+    margin-bottom: 15px;
+  }
 }
 .hero-list-item::before {
   content: '';
@@ -210,6 +214,7 @@
 }
 .hero-button .primary-btn,
 .hero-button .secondary-btn {
+  display: inline-block;
   min-width: 62px;
   padding: 6px 13px;
   border: none;

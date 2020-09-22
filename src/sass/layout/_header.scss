@@ -1,15 +1,20 @@
 header {
   display: flex;
-  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
 }
 .header .container {
   display: flex;
-  position: absolute;
+  align-items: center;
   padding-top: 6px;
-  z-index: 1;
-  margin: 0 auto;
+  // z-index: 1;
+  // margin: 0 auto;
   @include for-size(tablet) {
     padding-top: 37px;
+  }
+  @include for-size(tablet) {
+    justify-content: space-between;
   }
 }
 .header a {
@@ -21,6 +26,15 @@ text-decoration: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.parent {
+  margin-left: 45px;
+  @include for-size(tablet) {
+    margin-left: 260px;
+  }
+  @include for-size(desktop) {
+    margin-left: 0;
+  }
 }
 
 .header-nav-list {
@@ -67,15 +81,10 @@ text-decoration: inherit;
     align-items: center;
     justify-content: center;
     border: none;
-    min-width: 160px;
-    height: 44px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-  }
-
-  @include for-size(desktop) {
-    margin-left: 115px;
+    padding: 0 40px;
+    line-height: 44px;
+    // min-width: 160px;
+    // height: 44px;
   }
 
   &::after {
@@ -137,6 +146,7 @@ text-decoration: inherit;
     border: none;
     min-width: 160px;
     height: 44px;
+    line-height: 44px;
     margin-top: auto;
     margin-bottom: 23px;
     margin-left: auto;
@@ -150,18 +160,9 @@ text-decoration: inherit;
 }
 
 .header-menu.is-open {
-  // display: block;
-  // z-index: 1;
-  // text-align: center;
-  // padding-top: 40px;
-  // top: 0;
   right: 6px;
   opacity: 1;
-  // transform: translateY(100%);
   transform: scale(1);
-  
-  // transition: all 3s steps(3, end);
- 
   @include for-size(tablet) {
     // right: -220px;
     top: 2px;
@@ -189,18 +190,18 @@ text-decoration: inherit;
   display: flex;
   // position: relative;
   justify-content: space-between;
-  width: 320px;
-  padding-right: 60px;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    padding-right: 5px;
-  }
-  @include for-size(tablet) {
-    width: 1100px;
-  }
+  // width: 320px;
+  // padding-right: 60px;
+  // @media screen and (min-width: 320px) and (max-width: 767px) {
+  //   // padding-right: 5px;
+  // }
+  // @include for-size(tablet) {
+  //   // width: 1100px;
+  // }
 
-  @include for-size(desktop) {
-    width: 302px;
-  }
+  // @include for-size(desktop) {
+  //   width: 302px;
+  // }
 }
 .menu-nav-list {
   display: flex;
